@@ -16,15 +16,15 @@ To clone the repo with git, type
 
 ```
 $ cd ~/Desktop # (or wherever you like)
-$ git clone https://github.com/mitwelten/mitwelten-web-static-poc
-$ cd mitwelten-web-static-poc
+$ git clone https://github.com/mitwelten/mitwelten-web-static
+$ cd mitwelten-web-static
 ```
 
 ## Run a local server
 To run a local Web server, type
 
 ```
-$ cd ~/Desktop/mitwelten-web-static-poc
+$ cd ~/Desktop/mitwelten-web-static
 $ hugo server -D
 (visit http://localhost:1313/)
 ```
@@ -33,7 +33,7 @@ $ hugo server -D
 To add a new post, type
 
 ```
-$ cd ~/Desktop/mitwelten-web-static-poc
+$ cd ~/Desktop/mitwelten-web-static
 $ hugo new posts/my-new-post.md
 $ open content/posts/my-new-post.md
 (edit, save your new post)
@@ -44,7 +44,7 @@ $ open content/posts/my-new-post.md
 To add a new device (i.e. using a custom archetype and custom shortcodes to embed charts, maps), type
 
 ```
-$ cd ~/Desktop/mitwelten-web-static-poc
+$ cd ~/Desktop/mitwelten-web-static
 $ hugo new id/0000-0004.md
 $ open content/id/0000-0004.md
 (edit, save your new device)
@@ -54,7 +54,7 @@ $ open content/id/0000-0004.md
 
 ## Check the file structure
 ```
-$ cd ~/Desktop/mitwelten-web-static-poc
+$ cd ~/Desktop/mitwelten-web-static
 $ brew install tree
 $ tree
 .
@@ -89,11 +89,6 @@ $ tree
 │       ├── klybeck.png
 │       ├── merian.png
 │       └── reinach.png
-```
-
-This entire part is not relevant right now.
-
-```
 └── themes
     └── my-theme
         ├── LICENSE
