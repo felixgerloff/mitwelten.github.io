@@ -1,7 +1,7 @@
-# Mitwelten Web Static Proof of Concept
-Here's a minimal site (no theme, no CSS)  to show the different concepts.
+# Mitwelten Web Static
+Hugo source code of the static part, to be hosted on www.mitwelten.org
 
-Hosting is not yet solved, you'll have to try it on your Mac.
+Hosting is not yet automated, you'll have to preview on your Mac.
 
 ## Install Hugo
 On your Mac, open a Terminal and type
