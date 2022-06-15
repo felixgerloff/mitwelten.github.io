@@ -1,9 +1,9 @@
 # Mitwelten Web Static
-Hugo source code of the static part, to be hosted on www.mitwelten.org
+Hugo source code of the static part, to be hosted on www.mitwelten.org.
 
 Hosting is not yet automated, you'll have to preview on your Mac.
 
-Publishing involves copying files to mitwelten.github.io
+Publishing requires copying files to [mitwelten.github.io](https://github.com/mitwelten/mitwelten.github.io).
 
 ## Install Hugo
 On your Mac, open a Terminal and type
