@@ -1,0 +1,24 @@
+{
+  "name": "mitwelten-web-static",
+  "version": "0.0.1",
+  "description": "Mitwelten.",
+  "main": "none.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitwelten/mitwelten=web-static.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mitwelten/mitwelten-web-static/issues"
+  },
+  "homepage": "https://github.com/mitwelten/mitwelten-web-static#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.7",
+    "postcss-cli": "^9.0.2"
+  }
+}
