@@ -1,130 +1,138 @@
-# Mitwelten Web Static Proof of Concept
-Here's a minimal site (no theme, no CSS)  to show the different concepts.
+# Docsy Example
 
-Hosting is not yet solved, you'll have to try it on your Mac.
+[Docsy][] is a [Hugo theme module][] for technical documentation sites, providing easy
+site navigation, structure, and more. This **Docsy Example Project** uses the Docsy
+theme component as a hugo module and provides a skeleton documentation structure for you to use.
+You can clone/copy this project and edit it with your own content, or use it as an example.
 
-## Install Hugo
-On your Mac, open a Terminal and type
+In this project, the Docsy theme component is pulled in as a Hugo module, together with other module dependencies:
 
-```
-$ brew install hugo
-$ hugo version
-```
-
-## Get this repo
-To clone the repo with git, type
-
-```
-$ cd ~/Desktop # (or wherever you like)
-$ git clone https://github.com/mitwelten/mitwelten-web-static-poc
-$ cd mitwelten-web-static-poc
+```bash
+$ hugo mod graph
+hugo: collected modules in 566 ms
+hugo: collected modules in 578 ms
+github.com/google/docsy-example github.com/google/docsy@v0.2.0
+github.com/google/docsy-example github.com/google/docsy/dependencies@v0.2.0
+github.com/google/docsy/dependencies@v0.2.0 github.com/twbs/bootstrap@v4.6.1+incompatible
+github.com/google/docsy/dependencies@v0.2.0 github.com/FortAwesome/Font-Awesome@v0.0.0-20210804190922-7d3d774145ac
 ```
 
-## Run a local server
-To run a local Web server, type
+You can find detailed theme instructions in the [Docsy user guide][].
 
-```
-$ cd ~/Desktop/mitwelten-web-static-poc
-$ hugo server -D
-(visit http://localhost:1313/)
-```
+This Docsy Example Project is hosted on [Netlify][] at [example.docsy.dev][].
+You can view deploy logs from the [deploy section of the project's Netlify
+dashboard][deploys], or this [alternate dashboard][].
 
-## Add a post
-To add a new post, type
+This is not an officially supported Google product. This project is currently maintained.
 
-```
-$ cd ~/Desktop/mitwelten-web-static-poc
-$ hugo new posts/my-new-post.md
-$ open content/posts/my-new-post.md
-(edit, save your new post)
-(check http://localhost:1313/posts)
-```
+## Using the Docsy Example Project as a template
 
-## Add a device
-To add a new device (i.e. using a custom archetype and custom shortcodes to embed charts, maps), type
+A simple way to get started is to use this project as a template, which gives you a site project that is set up and ready to use. To do this: 
 
-```
-$ cd ~/Desktop/mitwelten-web-static-poc
-$ hugo new id/0000-0004.md
-$ open content/id/0000-0004.md
-(edit, save your new device)
-(check http://localhost:1313/id)
-```
-> Note: The convention would require `ids`, but we already commited to `id`.
+1. Click **Use this template**.
 
-## Check the file structure
-```
-$ cd ~/Desktop/mitwelten-web-static-poc
-$ brew install tree
-$ tree
-.
-├── LICENSE
-├── README.md
-├── archetypes
-│   ├── default.md
-│   └── id.md
-├── config.toml
-├── content
-│   ├── _index.md
-│   ├── id
-│   │   ├── 0000-0001.md
-│   │   ├── 0000-0002.md
-│   │   └── 0000-0003.md
-│   └── posts
-│       ├── my-first-post.md
-│       └── my-second-post.md
-├── layouts
-│   ├── _default
-│   │   ├── baseof.html
-│   │   ├── list.html
-│   │   └── single.html
-│   ├── index.html
-│   └── shortcodes
-│       ├── swisstopo.html
-│       └── thingspeak.html
-├── resources
-│   └── _gen
-├── static
-│   └── images
-│       ├── klybeck.png
-│       ├── merian.png
-│       └── reinach.png
+2. Select a name for your new project and click **Create repository from template**.
+
+3. Make your own local working copy of your new repo using git clone, replacing https://github.com/me/example.git with your repo’s web URL:
+
+```bash
+git clone --depth 1 https://github.com/me/example.git
 ```
 
-This entire part is not relevant right now.
+You can now edit your own versions of the site’s source files.
 
-```
-└── themes
-    └── my-theme
-        ├── LICENSE
-        ├── archetypes
-        │   └── default.md
-        ├── layouts
-        │   ├── 404.html
-        │   ├── _default
-        │   │   ├── baseof.html
-        │   │   ├── list.html
-        │   │   └── single.html
-        │   ├── index.html
-        │   └── partials
-        │       ├── footer.html
-        │       ├── head.html
-        │       └── header.html
-        └── theme.toml
+If you want to do SCSS edits and want to publish these, you need to install `PostCSS`
+
+```bash
+npm install
 ```
 
-# Docs
-The following links provide technical background.
+## Running the website locally
 
-## Installing & Usage
-* https://gohugo.io/getting-started/installing/
-* https://gohugo.io/getting-started/usage/
+Building and running the site locally requires a recent `extended` version of [Hugo](https://gohugo.io).
+You can find out more about how to install Hugo for your environment in our
+[Getting started](https://www.docsy.dev/docs/getting-started/#prerequisites-and-installation) guide.
 
-## Templates (based on HTML)
-* https://gohugo.io/templates/base/
-* https://gohugo.io/templates/homepage/
+Once you've made your working copy of the site repo, from the repo root folder, run:
 
-## Content Management (based on Markdown)
-* https://gohugo.io/getting-started/quick-start/
-* https://gohugo.io/content-management/archetypes/
-* https://gohugo.io/content-management/shortcodes/
+```
+hugo server
+```
+
+## Running a container locally
+
+You can run docsy-example inside a [Docker](https://docs.docker.com/)
+container, the container runs with a volume bound to the `docsy-example`
+folder. This approach doesn't require you to install any dependencies other
+than [Docker Desktop](https://www.docker.com/products/docker-desktop) on
+Windows and Mac, and [Docker Compose](https://docs.docker.com/compose/install/)
+on Linux.
+
+1. Build the docker image 
+
+   ```bash
+   docker-compose build
+   ```
+
+1. Run the built image
+
+   ```bash
+   docker-compose up
+   ```
+
+   > NOTE: You can run both commands at once with `docker-compose up --build`.
+
+1. Verify that the service is working. 
+
+   Open your web browser and type `http://localhost:1313` in your navigation bar,
+   This opens a local instance of the docsy-example homepage. You can now make
+   changes to the docsy example and those changes will immediately show up in your
+   browser after you save.
+
+### Cleanup
+
+To stop Docker Compose, on your terminal window, press **Ctrl + C**. 
+
+To remove the produced images run:
+
+```console
+docker-compose rm
+```
+For more information see the [Docker Compose
+documentation](https://docs.docker.com/compose/gettingstarted/).
+
+## Troubleshooting
+
+As you run the website locally, you may run into the following error:
+
+```
+➜ hugo server
+
+INFO 2021/01/21 21:07:55 Using config file: 
+Building sites … INFO 2021/01/21 21:07:55 syncing static files to /
+Built in 288 ms
+Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-scss): resource "scss/scss/main.scss_9fadf33d895a46083cdd64396b57ef68" not found in file cache
+```
+
+This error occurs if you have not installed the extended version of Hugo.
+See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-hugo) of the user guide for instructions on how to install Hugo.
+
+Or you may encounter the following error:
+
+```
+➜ hugo server
+
+Error: failed to download modules: binary with name "go" not found
+```
+
+This error occurs if you have not installed the `go` programming language on your system.
+See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-go-language) of the user guide for instructions on how to install `go`.
+
+
+[alternate dashboard]: https://app.netlify.com/sites/goldydocs/deploys
+[deploys]: https://app.netlify.com/sites/docsy-example/deploys
+[Docsy user guide]: https://docsy.dev/docs
+[Docsy]: https://github.com/google/docsy
+[example.docsy.dev]: https://example.docsy.dev
+[Hugo theme module]: https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
+[Netlify]: https://netlify.com
