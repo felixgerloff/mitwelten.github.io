@@ -54,6 +54,7 @@ latexDashes = true
 
 # Image processing configuration.
 [imaging]
+bgColor = "#ffffff"
 resampleFilter = "Lanczos"
 quality = 85
 anchor = "smart"
