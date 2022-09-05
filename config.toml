@@ -54,8 +54,8 @@ latexDashes = true
 
 # Image processing configuration.
 [imaging]
-resampleFilter = "CatmullRom"
-quality = 75
+resampleFilter = "Lanczos"
+quality = 85
 anchor = "smart"
 
 [services]
