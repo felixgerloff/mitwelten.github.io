@@ -187,10 +187,10 @@ enable = false
 #  icon = "fa fa-envelope"
 #  desc = "Discussion and help from your fellow users"
 [[params.links.user]]
-  name ="Twitter"
-  url = "https://twitter.com/mitwelten"
-  icon = "fab fa-twitter"
-  desc = "Follow us on Twitter to get the latest news!"
+  name ="Kontakt"
+  url = "mailto:mitwelten.technik@fhnw.ch"
+  icon = "fa fa-envelope"
+  desc = "→ Fragen, Anregungen, Zusammenarbeit & Austausch per Email"
 #[[params.links.user]]
 #  name = "Stack Overflow"
 #  url = "https://example.org/stack"
@@ -201,7 +201,7 @@ enable = false
   name = "GitHub"
   url = "https://github.com/mitwelten"
   icon = "fab fa-github"
-  desc = "Development takes place here!"
+  desc = "→ IoT Toolkit, technologische Entwicklungen & Anleitungen auf GitHub"
 #[[params.links.developer]]
 #  name = "Slack"
 #  url = "https://example.org/slack"
