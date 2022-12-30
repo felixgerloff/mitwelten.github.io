@@ -1,9 +1,0 @@
-{
-  "id": "0000-0004",
-  "type": "Photo",
-  "base": "OpenMVH7Plus",
-  "batt": "6600 mAh Li-Ion",
-  "conn": "None",
-  "hw-v": "v0.0.0",
-  "fw-v": "v0.0.0"
-}

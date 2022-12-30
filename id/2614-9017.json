@@ -1,9 +1,0 @@
-{
-  "id": "2614-9017",
-  "type": "Audio",
-  "base": "AudioMoth",
-  "batt": "3 * AA NiMH",
-  "conn": "None",
-  "hw-v": "v1.2.0",
-  "fw-v": "v1.5.0"
-}

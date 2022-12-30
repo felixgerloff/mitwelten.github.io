@@ -1,9 +1,0 @@
-{
-  "id": "1620-4233",
-  "type": "Access Point",
-  "base": "TP-Link",
-  "batt": "220V",
-  "conn": "4G",
-  "hw-v": "v0.0.0",
-  "fw-v": "v0.0.0"
-}

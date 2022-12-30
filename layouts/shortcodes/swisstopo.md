@@ -1,0 +1,1 @@
+<iframe src='https://map.geo.admin.ch/embed.html?lang=en&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&E={{ .Get "e" }}&N={{ .Get "n" }}&zoom=10&crosshair=marker' width='450' height='260' style="border: 1px solid #cccccc; margin-right: 0.8em;"></iframe>

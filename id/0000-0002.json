@@ -1,9 +1,0 @@
-{
-  "id": "0000-0002",
-  "type": "Moisture",
-  "base": "FeatherM4Express",
-  "batt": "2200 mAh LiPo",
-  "conn": "LoRaWAN",
-  "hw-v": "v0.0.0",
-  "fw-v": "v0.0.0"
-}

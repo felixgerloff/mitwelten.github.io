@@ -1,9 +1,0 @@
-{
-  "id": "2649-7404",
-  "type": "Optical",
-  "base": "PiCam",
-  "enrg": "PoE",
-  "conn": "RJ45",
-  "hw-v": "v0.0.0",
-  "fw-v": "v0.0.0"
-}

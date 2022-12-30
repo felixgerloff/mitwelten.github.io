@@ -1,9 +1,0 @@
-{
-  "id": "3337-4698",
-  "type": "Audio",
-  "base": "AudioMoth",
-  "batt": "Li-Ion, 3.7V, 4400 mAh",
-  "conn": "None",
-  "hw-v": "v1.2.0",
-  "fw-v": "v1.5.0"
-}
