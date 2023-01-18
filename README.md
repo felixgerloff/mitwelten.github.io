@@ -40,7 +40,7 @@ $ git clone https://github.com/mitwelten/mitwelten.github.io
 $ ... # TODO, install Node.js modules
 ```
 
-## Publish to public server
+## Publish to www.mitwelten.org
 To publish to www.mitwelten.org (assuming you's [set up to publish](#set-up-to-publish)), type
 
 ```
