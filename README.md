@@ -37,7 +37,7 @@ To set up publishing to www.mitwelten.org, type
 ```
 $ cd ~/Desktop # (or wherever you keep mitwelten-web-static)
 $ git clone https://github.com/mitwelten/mitwelten.github.io
-$ ... # TODO, install Node.js modules
+$ npm install autoprefixer
 ```
 
 ## Publish to mitwelten.org
