@@ -45,11 +45,12 @@ To publish to www.mitwelten.org (assuming you're [set up to publish](#set-up-to-
 
 ```
 $ cd ~/Desktop/mitwelten-web-static
+$ git pull
 $ hugo
-$ cp ... ... # TODO
+$ cp -r public/ ../mitwelten.github.io
 $ cd ../mitwelten.github.io
 $ git status # check changed files
-$ git commit
+$ git commit --all
 $ git push
 (visit https://www.mitwelten.org/)
 ```
