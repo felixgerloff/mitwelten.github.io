@@ -32,7 +32,7 @@ $ hugo server -D
 ```
 
 ## Set up to publish
-To setup publishing to www.mitwelten.org, type
+To set up publishing to www.mitwelten.org, type
 
 ```
 $ cd ~/Desktop # (or wherever you keep mitwelten-web-static)
