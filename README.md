@@ -41,7 +41,7 @@ $ ... # TODO, install Node.js modules
 ```
 
 ## Publish to public server
-To publish to www.mitwelten.org (assuming you's [set up to publish](#Set_up_to_publish)), type
+To publish to www.mitwelten.org (assuming you's [set up to publish](#set-up-to-publish)), type
 
 ```
 $ cd ~/Desktop/mitwelten-web-static
