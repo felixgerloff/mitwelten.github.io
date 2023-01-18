@@ -31,6 +31,24 @@ $ hugo server -D
 (visit http://localhost:1313/)
 ```
 
+## Set up to publish
+To setup publishing to www.mitwelten.org, type
+
+```
+$ cd ~/Desktop # (or wherever you keep mitwelten-web-static)
+$ git clone https://github.com/mitwelten/mitwelten.github.io
+$ ... # TODO, install Node.js modules
+```
+
+## Publish to public server
+To publish to www.mitwelten.org (assuming you's [set up to publish](#Set_up_to_publish)), type
+
+```
+$ cd ~/Desktop/mitwelten-web-static
+$ hugo
+(visit [https://www.mitwelten.org/](https://www.mitwelten.org/))
+```
+
 ## Add a post
 To add a new post, type
 
